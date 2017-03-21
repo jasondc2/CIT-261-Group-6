@@ -3,7 +3,6 @@ function getBig(x) {
     x.style.width = "200px";
     x.style.WebkitTransitionDuration = "1s"; 
     x.style.transitionDuration = "1s"; 
-    x.style.position = "relative";
 }
 
 function getNorm(x) {
