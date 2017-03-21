@@ -12,4 +12,6 @@ function getNorm(x) {
     x.style.height = "150px";
     x.style.width = "150px";
     x.style.border = "none"
+    x.style.WebkitTransitionDuration = "1s"; 
+    x.style.transitionDuration = "1s";
 }
