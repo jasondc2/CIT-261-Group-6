@@ -140,6 +140,7 @@ body{
 	height:150px;
 	margin-top: 15px;
 	background-color: #D3D3D3;
+	clear: both;
 }
 /*Class Styles*/
 .title{
@@ -161,7 +162,7 @@ body{
 .gallery_item{
 	display: inline-block;
 	padding: 5px;
-	position: relative;
+	position: absolute;
 }
 .rightArrow{
 	background-image: url(Images/rightArrow.svg);
