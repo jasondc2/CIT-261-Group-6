@@ -3,7 +3,7 @@
 function getBig(x) {
     x.style.height = "200px";
     x.style.width = "200px";
-    x.style.boxShadow = "10px 10px 10px 10px yellow";
+    x.style.border = "thick solid #FFCE2B"
     x.style.WebkitTransitionDuration = "1s"; 
     x.style.transitionDuration = "1s"; 
 }
