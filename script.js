@@ -8,5 +8,4 @@ function getBig(x) {
 function getNorm(x) {
     x.style.height = "150px";
     x.style.width = "150px";
-    x.style.position = "absolute";
 }
