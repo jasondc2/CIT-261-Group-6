@@ -143,18 +143,19 @@ body{
 	margin-top: 15px;
 	background-color: #D3D3D3;
 	font-style: italic;
+	font-size: 12px;
 }
 #footContentMiddle{
 	text-align: left;
-	display: inline-block;
+	display: inline;
 }
 #footContentMiddle{
 	text-align: center;
-	display: inline-block;
+	display: inline;
 }
 #footContentMiddle{
 	text-align: right;
-	display: inline-block;
+	display: inline;
 }
 /*Class Styles*/
 .title{
