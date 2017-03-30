@@ -4,20 +4,18 @@ var which = 0;
 var resized = false;
 var boxSize;
 var largeBoxSize;
-var windowX = window.innerWidth
-	|| document.documentElement.clientWidth
-	|| document.body.clientWidth;;
-var windowY = window.innerHeight
-	|| document.documentElement.clientHeight
-	|| document.body.clientHeight;;
+var windowX = document.getElementById("wrap").getBoundingClientRect().width;
+var windowY = document.getElementById("wrap").getBoundingClientRect().height;
 window.addEventListener("resize", function(){
 	resized = true;
-	windowX = window.innerWidth
+	windowX = document.getElementById("wrap").getBoundingClientRect().width;
+	windowY = document.getElementById("wrap").getBoundingClientRect().height;
+	/*windowX = window.innerWidth
 	|| document.documentElement.clientWidth
-	|| document.body.clientWidth;
-	windowY = window.innerHeight
+	|| document.body.clientWidth;*/
+	/*windowY = window.innerHeight
 	|| document.documentElement.clientHeight
-	|| document.body.clientHeight;
+	|| document.body.clientHeight;*/
 	start();
 	if(windowX < 481){
 			window.addEventListener("scroll", removeTop);
