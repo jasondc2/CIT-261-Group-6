@@ -145,10 +145,16 @@ body{
 	font-style: italic;
 }
 #footContentMiddle{
+	text-align: left;
+	display: inline-block;
+}
+#footContentMiddle{
 	text-align: center;
+	display: inline-block;
 }
 #footContentMiddle{
 	text-align: right;
+	display: inline-block;
 }
 /*Class Styles*/
 .title{
