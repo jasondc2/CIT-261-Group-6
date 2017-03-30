@@ -10,8 +10,9 @@ body{
 /*ID Styles*/
 #wrap{
 	width: 100%;
+	max-width: 1550px;
 	height: 100%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 #header{
