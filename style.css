@@ -142,6 +142,13 @@ body{
 	height:150px;
 	margin-top: 15px;
 	background-color: #D3D3D3;
+	font-style: italic;
+}
+#footContentMiddle{
+	float: center;
+}
+#footContentMiddle{
+	float: right;
 }
 /*Class Styles*/
 .title{
