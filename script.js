@@ -1,7 +1,31 @@
-//These functions increase and decrease the image sizes based on mouse over and mouse out
 var holder = document.getElementsByClassName("inside_shrink");
 var galleryItems = new Array(holder.length);
 var which = 0;
+var resized = false;
+var boxSize;
+var largeBoxSize;
+var windowX = window.innerWidth
+	|| document.documentElement.clientWidth
+	|| document.body.clientWidth;;
+var windowY = window.innerHeight
+	|| document.documentElement.clientHeight
+	|| document.body.clientHeight;;
+window.addEventListener("resize", function(){
+	resized = true;
+	windowX = window.innerWidth
+	|| document.documentElement.clientWidth
+	|| document.body.clientWidth;
+	windowY = window.innerHeight
+	|| document.documentElement.clientHeight
+	|| document.body.clientHeight;
+	start();
+	if(windowX < 481){
+			window.addEventListener("scroll", removeTop);
+	}
+});
+if(windowX < 481){
+		window.addEventListener("scroll", removeTop);
+}
 for(var i = 0; i < holder.length; i++){
 	galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
@@ -10,6 +34,14 @@ var galItemPosY = 0;
 var myIndex = 0;
 start();
 carousel();
+function removeTop(){
+	if(document.body.scrollTop > 115){
+		document.getElementById("header").style.display = "none";
+	}
+	else{
+		document.getElementById("header").style.display = "block";
+	}
+}
 function moveGallery(n){
 	if(n == 0){
 		if(which == 1){
@@ -35,8 +67,8 @@ function moveGallery(n){
 	}
 }
 function getBig(x) {
-    x.style.height = "200px";
-    x.style.width = "200px";
+    x.style.height = largeBoxSize + "px";
+    x.style.width = largeBoxSize + "px";
     x.style["boxShadow"] = "0px 0px 30px 3px rgba(255,242,0,1)";
     x.style.WebkitTransitionDuration = "1s"; 
     x.style.transitionDuration = "1s"; 
@@ -44,8 +76,8 @@ function getBig(x) {
 }
 
 function getNorm(x) {
-    x.style.height = "150px";
-    x.style.width = "150px";
+    x.style.height = boxSize + "px";
+    x.style.width = boxSize + "px";
     x.style["boxShadow"] = "";
     x.style.WebkitTransitionDuration = "1s"; 
     x.style.transitionDuration = "1s"; 
@@ -59,34 +91,47 @@ function start(){
 	holder[1].style["transition"] = "all 2s linear";
 	for(var j = 0; j < holder.length; j++){
 		var count = 1;
+		var temp;
+		if(windowX < 481){
+			temp = ((windowX * 0.75)/5);
+			boxSize =  temp - 10;
+			largeBoxSize = boxSize * 1.15;
+		}
+		else{
+			temp = ((windowX * 0.6)/5);
+			boxSize = temp - 20;
+			largeBoxSize = boxSize * 1.15;
+		}
+		console.log("Temp = " + temp + " boxSize = " + boxSize);
 		for(var i = galleryItems[j].length - 1; i != -1; i--){
-			galleryItems[j][i].style.height = "150px";
-			galleryItems[j][i].style.width = "150px";
+			galleryItems[j][i].firstChild.style.height = boxSize + "px";
+			galleryItems[j][i].firstChild.style.width = boxSize + "px";
 			galleryItems[j][i].style["boxShadow"] = "";
 			if((i + 1) % 5 == 0 && (i + 1) != galleryItems[j].length){
-				galItemPosY += 160;
+				galItemPosY += temp;
 				galItemPosX = 0;
 				count++;
 			}
 			galleryItems[j][i].style.left = galItemPosX + "px";
 			galleryItems[j][i].style.top = galItemPosY + "px";
-			galItemPosX += 160;
+			galItemPosX += temp;
 			galleryItems[j][i].style.WebkitTransitionDuration = "1s"; 
 			galleryItems[j][i].style.transitionDuration = "1s";
 			galleryItems[j][i].style.zIndex = 2;
 		}
-		var amount = count * 160;
+		var amount = count * temp;
 		holder[j].parentElement.parentElement.style.height = amount + "px";
 		galItemPosX = 0;
 		galItemPosY = 0;
 	}
-	
-	var content = document.getElementsByClassName("content");
-	for(var i = 0; i < content.length; i++){
-		if(i === 0){
-			hideHelper(i,0);
-		}else{
-			content[i].style.display = "none";
+	if(!resized){
+		var content = document.getElementsByClassName("content");
+		for(var i = 0; i < content.length; i++){
+			if(i === 0){
+				hideHelper(i,0);
+			}else{
+				content[i].style.display = "none";
+			}
 		}
 	}
 }

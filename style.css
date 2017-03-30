@@ -27,25 +27,26 @@ body{
 #head_top_left{
 	display: block;
 	float: left;
-	width: 25%;
+	width: 0%;
 	height: 100px;
 }
 #head_top_mid{
 	display: block;
 	float:left;
-	width: 50%;
+	width: 65%;
 	margin: auto;
 	height: 100px;
 }
 #head_top_right{
 	display: block;
 	float: left;
-	width: 25%;
+	width: 35%;
 	height: 100px;
 }
 #cart{
-	margin-left: 50%;
-	margin-top:15%;
+	margin-top: 7.5%;
+	margin-right: 15px;
+	float: right;
     background-color: #D3D3D3;
     border: none;
 	border-radius: 4px;
@@ -76,11 +77,11 @@ body{
 	display: block;
 	float: left;
 	text-align: center;
-	width: 19%;
+	width: calc(20% - 1.25px);
+	line-height: 100%;
 	height: 50px;
-	line-height: 50px;
 	margin: 0px;
-	padding: 0px;
+	padding-top: 5px;
 	margin-top: -35px;
 	background: white;
 	border-bottom: black solid 1px;
@@ -102,7 +103,7 @@ body{
 }
 
 #image_slider{
-	height: 350px;
+	height: 100%;
 	width: 100%;
 	margin: auto;
 	border:1px solid black;
@@ -145,10 +146,11 @@ body{
 .title{
 	display: block;
 	font-size: 45px;
-	line-height: 75px;
-	text-align: center;
+	padding-left: 30px;
+	line-height: 50px;
+	text-align: left;
 	width: 100%;
-	height: 75px;
+	height: 50px;
 	cursor: pointer;
 	transition: all 0.25s;
 }
@@ -158,7 +160,8 @@ body{
 .sub-title{
 	display: block;
 	font-size: 16px;
-	text-align: center;
+	padding-left: 30px;
+	text-align: left;
 	width: 100%;
 	line-height: 25px;
 	height: 25px;
@@ -211,17 +214,93 @@ body{
 }
 .alignMiddle{
 }
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+.slides{
+	margin-top: -150px;
 }
-
+/* Small Devices, Tablets */ 
+@media only screen and (max-width : 768px) {
+	#menu{
+		width: 90%;
+	}
+	#menu li{
+		width: calc(20% - 1.25px);
+		line-height: 100%;
+	}
+}
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+	#header{
+		width: 100%;
+		height: 116px;
+		margin: 0;
+		position: fixed;
+		background-color: white;
+	}
+	#head_top{
+		width: auto;
+		height: 75px;
+	}
+	#head_top_left{
+		width: 0;
+		height: 50px;
+	}
+	#head_top_mid{
+		width: 65%;
+		height: 50px;
+	}
+	#head_top_right{
+		width: 35%;
+		height: 50px;
+	}
+	#head_bottom{
+		margin-top: -1px;
+		height: 41px;
+	}
+	#cart{
+		margin-top: 15%;
+		margin-right: 15px;
+		float: right;
+		height: 15px;
+		line-height: 2px;
+		padding: 15px 32px;
+	}
+	#menu{
+		width: 100%;
+	}
+	#menu li{
+		width: calc(20% - 1.25px);
+		margin-top: 0;
+		line-height: 100%;
+		height: 35px;
+	}
+	#image_slider{
+		height: 100%;
+	}
+	.title{
+		text-align: left;
+		height: 50px;
+		font-size: 34px;
+		line-height: 50px;
+	}
+	.title:hover{
+		font-size: 40px;
+	}
+	.sub-title{
+		text-align: left;
+		height: 20px;
+		line-height: 20px;
+		font-size: 10px;
+	}
+	.content{
+		padding-top: 125px;
+		width: 100%;
+	}
+	.slides{
+		margin-top: 0;
+	}
+	.gallery_item img{
+		width: 75px;
+		height: 75px;
+	}
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
-
-}
