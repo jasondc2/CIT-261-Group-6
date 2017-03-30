@@ -145,7 +145,7 @@ body{
 	font-style: italic;
 	font-size: 12px;
 }
-#footContentMiddle{
+#footContentLeft{
 	text-align: left;
 	display: inline;
 }
@@ -153,9 +153,9 @@ body{
 	text-align: center;
 	display: inline;
 }
-#footContentMiddle{
+#footContentRight{
 	text-align: right;
-	display: inline;
+	display: inline-block;
 }
 /*Class Styles*/
 .title{
