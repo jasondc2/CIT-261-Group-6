@@ -101,7 +101,7 @@ function getNorm(x) {
 }
 function setCatalog(obj){
 	var index = 0;
-	console.log(obj);
+	catalog = obj;
 	for(var lamp in obj){
 		itemList[index] = new Lamp(obj[lamp].Name, obj[lamp].Price, obj[lamp].Type, obj[lamp].Picture, obj[lamp].Description);
 		index += 1;
