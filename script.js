@@ -298,13 +298,12 @@ function buildCart() {
         summaryItemCount = (parseInt(summaryItemCount) + parseInt(cart[item]));
         itemSubtotal = (parseFloat(cart[item]) * parseFloat(catalog[item].Price));
         subtotal = (parseFloat(subtotal) + parseFloat(itemSubtotal)).toFixed(2);
-        alert(summaryItemCount);
     }
 
     var cartSummary = document.createElement ("div");
     cartSummary.id = "cartSummary";
     document.getElementById("content_cart").appendChild(cartSummary);
-    cartSummary.innerHTML = 'Subtotal:' + '<div id="cartSubtotal"> (' + summaryItemCount + ' items) $' + subtotal + '</div>';
+    cartSummary.innerHTML = '<div id="cartCheckout">(' + summaryItemCount + ' items)<br><button id="checkout">Checkout</button></div><div id="cartSubtotal"> Subtotal<br> $' + subtotal + '</div>';
 }
 
 //Close Content - Load Cart
@@ -318,13 +317,10 @@ function openCart() {
     }
 
     //Show Cart
-    if (showCart.innerHTML == "") {
-        showCart.innerHTML = "Your shopping cart is empty.";
-    }
     showCart.style.display = "block";
 }
 function featuredPopulate(){
-	
+
 }
 function pagesPopulate(){
 }
