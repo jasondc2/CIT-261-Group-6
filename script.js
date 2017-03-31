@@ -50,7 +50,7 @@ var galItemPosY = 0;
 var myIndex = 0;
 start();
 carousel();
-setTimeout(start, 100);
+setTimeout(start, 10);
 function removeTop(){
     if(document.body.scrollTop > 115){
         document.getElementById("header").style.display = "none";
