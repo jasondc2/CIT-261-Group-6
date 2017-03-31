@@ -9,7 +9,7 @@ function Lamp(name, price, type, image, description){
 	this.image = image;
 	this.description = description;
 }
-Lamp.prototype.populate = function(item){
+function populate(where, what){
 	/*item.getElementById("lamp_name").innerHTML = this.name;
 	item.getElementById("lamp_price").innerHTML = this.price;
 	item.getElementById("lamp_image").innerHTML = this.image;
@@ -359,7 +359,7 @@ function pagesPopulate(){
 function createGalleryItem(where, n){
 	var div = document.createElement("div");
 	div.className = "gallery_item";
-	itemList[n].populate(div);
+	populate(div, itemList[n]);
 	where.appendChild(div);
 }
 function dismantleCart() {
