@@ -10,11 +10,11 @@ function Lamp(name, price, type, image, description){
 	this.description = description;
 }
 Lamp.prototype.populate = function(item){
-	item.getElementById("lamp_name").innerHTML = this.name;
+	/*item.getElementById("lamp_name").innerHTML = this.name;
 	item.getElementById("lamp_price").innerHTML = this.price;
 	item.getElementById("lamp_image").innerHTML = this.image;
 	item.getElementById("lamp_type").innerHTML = this.type;
-	item.getElementById("lamp_description").innerHTML = this.description;
+	item.getElementById("lamp_description").innerHTML = this.description;*/
 }
 //JSON Lamp Catalog
 var catalog;
@@ -360,10 +360,10 @@ function pagesPopulate(){
 		}
 	}
 }
-function createGalleryItem(where, what){
+function createGalleryItem(where, n){
 	var div = document.createElement("div");
 	div.className = "gallery_item";
-	itemList[what].populate(div);
+	itemList[n].populate(div);
 	where.appendChild(div);
 }
 function dismantleCart() {
