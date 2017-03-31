@@ -138,12 +138,6 @@ body{
     position: relative;
 }
 #footer{
-<<<<<<< HEAD
-    width: 100%;
-    height:150px;
-    margin-top: 15px;
-    background-color: #D3D3D3;
-=======
 	width: 100%;
 	height:150px;
 	margin-top: 15px;
@@ -161,16 +155,7 @@ body{
 }
 #footContentRight{
 	text-align: right;
-<<<<<<< HEAD
 	display: inline-block;
-=======
-<<<<<<< HEAD
-	display: inline-block;
->>>>>>> origin/master
-=======
-	display: inline;
->>>>>>> origin/master
->>>>>>> origin/master
 }
 /*Class Styles*/
 .title{
