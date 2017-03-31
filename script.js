@@ -350,10 +350,17 @@ function featuredPopulate(){
 	}
 }
 function pagesPopulate(){
-	for(var i = 2; i < 7; i++){
-		for(var j = 0; j < 50; j++){
-			createGalleryItem(holder[i], j);
-		}
+	for(var j = 0; j < 50; j++){
+		if(itemList[j].Type == "Table")
+			createGalleryItem(holder[2], j);
+		if(itemList[j].Type == "Shade")
+			createGalleryItem(holder[3], j);
+		if(itemList[j].Type == "Floor")
+			createGalleryItem(holder[4], j);
+		if(itemList[j].Type == "Desk")
+			createGalleryItem(holder[5], j);
+		if(itemList[j].Type == "Clip")
+			createGalleryItem(holder[6], j);
 	}
 }
 function createGalleryItem(where, n){
