@@ -342,16 +342,12 @@ function openCart() {
     showCart.style.display = "block";
 }
 function featuredPopulate(){
-<<<<<<< HEAD
-
-=======
 	for(var i = 0; i < 4; i++){
 		createGalleryItem(holder[0], (10 * (i - 1)));
 		createGalleryItem(holder[1], ((10 * i) - 9));
 		createGalleryItem(holder[0], ((10 * i) - 8));
 		createGalleryItem(holder[1], ((10 * i) - 7));
 	}
->>>>>>> origin/master
 }
 function pagesPopulate(){
 	for(var i = 2; i < 7; i++){
