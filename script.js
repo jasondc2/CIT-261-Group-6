@@ -312,7 +312,7 @@ function featuredPopulate(){
 	
 }
 function pagesPopulate(){
-
+}
 function dismantleCart() {
     var dismantleCart = document.getElementById("content_cart");
     while (dismantleCart.firstChild) {
