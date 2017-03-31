@@ -245,6 +245,7 @@ body{
     display: flex;
     flex: wrap;
     border: solid 1px black;
+    margin-top: 5px;
 }
 
 .itemPic, .itemName, .itemPrice {
