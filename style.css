@@ -154,13 +154,8 @@ body{
     display: inline;
 }
 #footContentRight{
-<<<<<<< HEAD
     text-align: right;
     display: inline;
-=======
-	text-align: right;
-	display: inline-block;
->>>>>>> origin/master
 }
 /*Class Styles*/
 .title{
