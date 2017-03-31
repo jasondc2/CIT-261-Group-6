@@ -352,7 +352,7 @@ function featuredPopulate(){
 }
 function pagesPopulate(){
 	for(var j = 0; j < 50; j++){
-		if(itemList[j].Type == "Table")
+		/*if(itemList[j].Type == "Table")
 			createGalleryItem(holder[2], j);
 		if(itemList[j].Type == "Shade")
 			createGalleryItem(holder[3], j);
@@ -361,7 +361,7 @@ function pagesPopulate(){
 		if(itemList[j].Type == "Desk")
 			createGalleryItem(holder[5], j);
 		if(itemList[j].Type == "Clip")
-			createGalleryItem(holder[6], j);
+			createGalleryItem(holder[6], j);*/
 	}
 }
 function createGalleryItem(where, n){
