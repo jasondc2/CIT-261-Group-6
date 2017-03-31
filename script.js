@@ -1,3 +1,17 @@
+//Lightbulb
+function onOff() {
+   currentvalue = document.getElementById('onoff').value;
+   if(currentvalue == "Off"){
+      document.body.style.backgroundColor = "#42413D";
+      document.getElementById('onoff').src='Images/lightbulb.jpg'
+      document.getElementById("onoff").value = "On";
+   }else {
+      document.body.style.backgroundColor = "#ffffff";
+      document.getElementById('onoff').src='Images/lightbulb2.jpg'
+      document.getElementById("onoff").value="Off";
+    }
+}
+
 //Cart
 var cart = {};
 initializeCart();
