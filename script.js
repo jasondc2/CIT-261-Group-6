@@ -199,6 +199,7 @@ function initializeCatalog() {
         "use strict";
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             catalog = JSON.parse(xmlhttp.responseText);
+			console.log(catalog);
         }
     }
 
@@ -267,7 +268,6 @@ function buildCart() {
         itemRemove.innerHTML = 'Remove From Cart ' + '<button>x</button>';
     }
 }
-
 //Close Content - Load Cart
 function openCart() {
     var showCart = document.getElementById("content_cart");
