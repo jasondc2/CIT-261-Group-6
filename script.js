@@ -362,6 +362,7 @@ function pagesPopulate(){
 }
 function createGalleryItem(where, what){
 	var div = document.createElement("div");
+	div.className = "gallery_item";
 	what.populate(div);
 	where.appendChild(div);
 }
