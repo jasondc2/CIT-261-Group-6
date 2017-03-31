@@ -8,9 +8,6 @@ body{
     font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
 }
 /*ID Styles*/
-#onoff {
-    position: absolute;
-}
 #wrap{
     width: 100%;
     max-width: 1550px;
