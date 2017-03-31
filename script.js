@@ -29,6 +29,16 @@ var boxSize;
 var largeBoxSize;
 var windowX = document.getElementById("wrap").getBoundingClientRect().width;
 var windowY = document.getElementById("wrap").getBoundingClientRect().height;
+var index = 0;
+for(var lamp in catalog){
+	itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
+	index += 1;
+}
+featuredPopulate();
+pagesPopulate();
+for (var i = 0; i < holder.length; i++) {
+    galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
+}
 window.addEventListener("resize", function () {
     "use strict";
     resized = true;
@@ -41,16 +51,6 @@ window.addEventListener("resize", function () {
 });
 if (windowX < 481) {
     window.addEventListener("scroll", removeTop);
-}
-var index = 0;
-for(var lamp in catalog){
-	itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
-	index += 1;
-}
-featuredPopulate();
-pagesPopulate();
-for (var i = 0; i < holder.length; i++) {
-    galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
 var galItemPosX = 0;
 var galItemPosY = 0;
