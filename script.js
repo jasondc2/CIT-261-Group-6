@@ -2,7 +2,8 @@
 var cart = {};
 initializeCart();
 // JavaScript Document
-function Lamp(name, price, type, image, description){
+function Lamp(id, name, price, type, image, description){
+    this.id = id;
     this.name = name;
     this.price = price;
     this.type = type;
@@ -103,7 +104,7 @@ function setCatalog(obj){
 	var index = 0;
 	catalog = obj;
 	for(var lamp in obj){
-		itemList[index] = new Lamp(obj[lamp].Name, obj[lamp].Price, obj[lamp].Type, obj[lamp].Picture, obj[lamp].Description);
+		itemList[index] = new Lamp(lamp, obj[lamp].Name, obj[lamp].Price, obj[lamp].Type, obj[lamp].Picture, obj[lamp].Description);
 		index += 1;
 	}
 	featuredPopulate();
