@@ -32,6 +32,7 @@ var windowY = document.getElementById("wrap").getBoundingClientRect().height;
 var index = 0;
 for(var lamp in catalog){
 	itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
+	console("Item: " + lamp, "itemList: " + itemList[index])
 	index += 1;
 }
 featuredPopulate();
