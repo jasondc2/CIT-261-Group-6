@@ -25,13 +25,12 @@ var holder = document.getElementsByClassName("inside_shrink");
 var galleryItems = new Array(holder.length);
 var which = 0;
 var resized = false;
+var finished = false;
 var boxSize;
 var largeBoxSize;
 var windowX = document.getElementById("wrap").getBoundingClientRect().width;
 var windowY = document.getElementById("wrap").getBoundingClientRect().height;
-for (var i = 0; i < holder.length; i++) {
-	galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
-}
+
 window.addEventListener("resize", function () {
     "use strict";
     resized = true;
@@ -49,8 +48,8 @@ var galItemPosX = 0;
 var galItemPosY = 0;
 var myIndex = 0;
 start();
+window.setTimeout(start, 50);
 carousel();
-setTimeout(start, 10);
 function removeTop(){
     if(document.body.scrollTop > 115){
         document.getElementById("header").style.display = "none";
@@ -109,6 +108,7 @@ function setCatalog(obj){
 	}
 	featuredPopulate();
 	pagesPopulate();
+	start();
 }
 function start(){
     holder[0].style.left = "";
@@ -116,6 +116,9 @@ function start(){
     holder[0].style["transition"] = "all 2s linear";
     holder[1].style["transition"] = "all 2s linear";
 	
+	for (var i = 0; i < holder.length; i++) {
+		galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
+	}
     for(var j = 0; j < holder.length; j++){
         var count = 1;
         var temp;
