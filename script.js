@@ -347,23 +347,23 @@ function openCart() {
 }
 function featuredPopulate(){
 	for(var i = 0; i < 4; i++){
-		createGalleryItem(holder[0], itemList[(10 * (i - 1))]);
-		createGalleryItem(holder[1], itemList[((10 * i) - 9)]);
-		createGalleryItem(holder[0], itemList[((10 * i) - 8)]);
-		createGalleryItem(holder[1], itemList[((10 * i) - 7)]);
+		createGalleryItem(holder[0], (10 * (i - 1)));
+		createGalleryItem(holder[1], ((10 * i) - 9));
+		createGalleryItem(holder[0], ((10 * i) - 8));
+		createGalleryItem(holder[1], ((10 * i) - 7));
 	}
 }
 function pagesPopulate(){
 	for(var i = 2; i < 7; i++){
 		for(var j = 0; j < 50; j++){
-			createGalleryItem(holder[i], itemList[j]);
+			createGalleryItem(holder[i], j);
 		}
 	}
 }
 function createGalleryItem(where, what){
 	var div = document.createElement("div");
 	div.className = "gallery_item";
-	what.populate(div);
+	itemList[what].populate(div);
 	where.appendChild(div);
 }
 function dismantleCart() {
