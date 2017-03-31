@@ -18,7 +18,7 @@ Lamp.prototype.populate = function(item){
 }
 //JSON Lamp Catalog
 var catalog;
-var itemList[];
+var itemList = [];
 initializeCatalog();
 
 var holder = document.getElementsByClassName("inside_shrink");
