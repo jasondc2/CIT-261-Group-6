@@ -127,8 +127,8 @@ function start(){
         }
         console.log("Temp = " + temp + " boxSize = " + boxSize);
         for(var i = galleryItems[j].length - 1; i != -1; i--){
-            galleryItems[j][i].firstChild.style.height = boxSize + "px";
-            galleryItems[j][i].firstChild.style.width = boxSize + "px";
+            galleryItems[j][i].style.height = boxSize + "px";
+            galleryItems[j][i].style.width = boxSize + "px";
             galleryItems[j][i].style["boxShadow"] = "";
             if((i + 1) % 5 == 0 && (i + 1) != galleryItems[j].length){
                 galItemPosY += temp;
