@@ -18,12 +18,6 @@ window.addEventListener("resize", function(){
     resized = true;
     windowX = document.getElementById("wrap").getBoundingClientRect().width;
     windowY = document.getElementById("wrap").getBoundingClientRect().height;
-    /*windowX = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;*/
-    /*windowY = window.innerHeight
-    || document.documentElement.clientHeight
-    || document.body.clientHeight;*/
     start();
     if(windowX < 481){
             window.addEventListener("scroll", removeTop);
