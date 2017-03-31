@@ -29,16 +29,9 @@ var boxSize;
 var largeBoxSize;
 var windowX = document.getElementById("wrap").getBoundingClientRect().width;
 var windowY = document.getElementById("wrap").getBoundingClientRect().height;
-var index = 0;
-for(var lamp in catalog){
-	itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
-	console("Item: " + lamp, "itemList: " + itemList[index])
-	index += 1;
-}
-featuredPopulate();
-pagesPopulate();
+
 for (var i = 0; i < holder.length; i++) {
-    galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
+	galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
 window.addEventListener("resize", function () {
     "use strict";
@@ -58,6 +51,7 @@ var galItemPosY = 0;
 var myIndex = 0;
 start();
 carousel();
+setTimeout(start, 100);
 function removeTop(){
     if(document.body.scrollTop > 115){
         document.getElementById("header").style.display = "none";
@@ -107,12 +101,22 @@ function getNorm(x) {
     x.style.transitionDuration = "1s";
     x.style.zIndex = 2;
 }
-
+function setCatalog(obj){
+	var index = 0;
+	console.log(obj);
+	for(var lamp in obj){
+		itemList[index] = new Lamp(obj[lamp].Name, obj[lamp].Price, obj[lamp].Type, obj[lamp].Picture, obj[lamp].Description);
+		index += 1;
+	}
+	featuredPopulate();
+	pagesPopulate();
+}
 function start(){
     holder[0].style.left = "";
     holder[0].style.display = "";
     holder[0].style["transition"] = "all 2s linear";
     holder[1].style["transition"] = "all 2s linear";
+	
     for(var j = 0; j < holder.length; j++){
         var count = 1;
         var temp;
@@ -223,6 +227,8 @@ function initializeCatalog() {
         "use strict";
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             catalog = JSON.parse(xmlhttp.responseText);
+			setCatalog(catalog);
+			console.log(catalog);
         }
     };
 
@@ -273,7 +279,7 @@ function buildCart() {
         dismantleCart();
     }
     for (item in cart) {
-
+		console.log("catalog3", catalog);
         var cartItem = document.createElement("div");
         cartItem.className = "cartItem";
         cartItem.id = item;
@@ -352,16 +358,17 @@ function featuredPopulate(){
 }
 function pagesPopulate(){
 	for(var j = 0; j < 50; j++){
-		/*if(itemList[j].Type == "Table")
+		console.log(itemList[j].type);
+		if(itemList[j].type == "Table")
 			createGalleryItem(holder[2], j);
-		if(itemList[j].Type == "Shade")
+		if(itemList[j].type == "Shade")
 			createGalleryItem(holder[3], j);
-		if(itemList[j].Type == "Floor")
+		if(itemList[j].type == "Floor")
 			createGalleryItem(holder[4], j);
-		if(itemList[j].Type == "Desk")
+		if(itemList[j].type == "Desk")
 			createGalleryItem(holder[5], j);
-		if(itemList[j].Type == "Clip")
-			createGalleryItem(holder[6], j);*/
+		if(itemList[j].type == "Clip")
+			createGalleryItem(holder[6], j);
 	}
 }
 function createGalleryItem(where, n){
