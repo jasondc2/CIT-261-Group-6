@@ -242,6 +242,10 @@ function saveCartLocal() {
 }
 
 function buildCart() {
+    var itemSubtotal = 0,
+        subtotal = 0,
+        summaryItemCount = 0;
+
     if (document.getElementById("content_cart").firstChild) {
         dismantleCart();
     }
@@ -279,7 +283,8 @@ function buildCart() {
         var itemPrice = document.createElement("div");
         itemPrice.className = "itemPrice";
         inside.appendChild(itemPrice);
-        itemPrice.innerHTML = '$' + catalog[item].Price * cart[item];
+        itemPrice.innerHTML = '$' + catalog[item].Price;
+
 
         var outside = document.createElement("div");
         outside.className = "outside";
@@ -289,7 +294,17 @@ function buildCart() {
         itemRemove.className = "itemRemove";
         outside.appendChild(itemRemove);
         itemRemove.innerHTML = 'Remove From Cart ' + '<button onclick="removeFromCart(&quot;' + item + '&quot;)">x</button>';
+
+        summaryItemCount = (parseInt(summaryItemCount) + parseInt(cart[item]));
+        itemSubtotal = (parseFloat(cart[item]) * parseFloat(catalog[item].Price));
+        subtotal = (parseFloat(subtotal) + parseFloat(itemSubtotal)).toFixed(2);
+        alert(summaryItemCount);
     }
+
+    var cartSummary = document.createElement ("div");
+    cartSummary.id = "cartSummary";
+    document.getElementById("content_cart").appendChild(cartSummary);
+    cartSummary.innerHTML = 'Subtotal:' + '<div id="cartSubtotal"> (' + summaryItemCount + ' items) $' + subtotal + '</div>';
 }
 
 //Close Content - Load Cart
