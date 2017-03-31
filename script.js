@@ -9,7 +9,7 @@ function Lamp(name, price, type, image, description){
     this.image = image;
     this.description = description;
 }
-Lamp.prototype.populate = function(item){
+function populate(where, item){
     /*item.getElementById("lamp_name").innerHTML = this.name;
     item.getElementById("lamp_price").innerHTML = this.price;
     item.getElementById("lamp_image").innerHTML = this.image;
@@ -29,18 +29,6 @@ var boxSize;
 var largeBoxSize;
 var windowX = document.getElementById("wrap").getBoundingClientRect().width;
 var windowY = document.getElementById("wrap").getBoundingClientRect().height;
-<<<<<<< HEAD
-
-=======
-var index = 0;
-for(var lamp in catalog){
-    itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
-    console("Item: " + lamp, "itemList: " + itemList[index])
-    index += 1;
-}
-featuredPopulate();
-pagesPopulate();
->>>>>>> origin/master
 for (var i = 0; i < holder.length; i++) {
 	galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
@@ -56,16 +44,6 @@ window.addEventListener("resize", function () {
 });
 if (windowX < 481) {
     window.addEventListener("scroll", removeTop);
-}
-var index = 0;
-for(var lamp in catalog){
-    itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
-    index += 1;
-}
-featuredPopulate();
-pagesPopulate();
-for (var i = 0; i < holder.length; i++) {
-    galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
 var galItemPosX = 0;
 var galItemPosY = 0;
@@ -378,7 +356,6 @@ function featuredPopulate(){
     }
 }
 function pagesPopulate(){
-<<<<<<< HEAD
 	for(var j = 0; j < 50; j++){
 		console.log(itemList[j].type);
 		if(itemList[j].type == "Table")
@@ -392,18 +369,11 @@ function pagesPopulate(){
 		if(itemList[j].type == "Clip")
 			createGalleryItem(holder[6], j);
 	}
-=======
-    for(var i = 2; i < 7; i++){
-        for(var j = 0; j < 50; j++){
-            createGalleryItem(holder[i], j);
-        }
-    }
->>>>>>> origin/master
 }
 function createGalleryItem(where, n){
     var div = document.createElement("div");
     div.className = "gallery_item";
-    itemList[n].populate(div);
+    populate(div, itemList[n]);
     where.appendChild(div);
 }
 function dismantleCart() {
