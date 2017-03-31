@@ -1,32 +1,352 @@
 {
     "table0001": {
-        "Name" : "Mario ? Block Lamp",
-        "Price" : 29.99,
-        "Description" : "This lamp is fancy. It looks like a ? block from Mario games. It lights up and plays music too! You should get 2. Just sayin'.",
-        "Picture" : "Images/lamp1.jpg"
+        "Name" : "Tremont Bronze Iron Table Lamp",
+        "Price" : 169.99,
+        "Description" : "The burlap fabric lamp shade balances wonderfully with the bronze finish, creating the rich beauty of this traditional table lamp.",
+		"Type" : "Table", 
+        "Picture" : "Images/table1.jpg"
     },
+    "table0002": {
+        "Name" : "Libby 3-Light Industrial Console Lamp with Edison Bulbs",
+        "Price" : 149.99,
+        "Description" : "Amber seeded glass shades add to visual appeal of this rustic, industrial-style table lamp.",
+		"Type" : "Table", 
+        "Picture" : "Images/table2.jpg"
+    },
+    "table0003": {
+        "Name" : "Mission Cage Night Light Urn Table Lamp",
+        "Price" : 149.99,
+        "Description" : "Inspired by classic lanterns, this brushed iron traditional table lamp boasts a caged champagne glass nightlight base.",
+		"Type" : "Table", 
+        "Picture" : "Images/table3.jpg"
+    },
+    "table0004": {
+        "Name" : "Table Lamp 4",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #4.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },
+    "table0005": {
+        "Name" : "Table Lamp 5",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #5.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },
+    "table0006": {
+        "Name" : "Table Lamp 6",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #6.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },
+    "table0007": {
+        "Name" : "Table Lamp 7",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #7.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },
+    "table0008": {
+        "Name" : "Table Lamp 8",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #8.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },
+    "table0009": {
+        "Name" : "Table Lamp 9",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #9.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },
+    "table0010": {
+        "Name" : "Table Lamp 10",
+        "Price" : 29.99,
+        "Description" : "This is a generic table lamp #10.",
+		"Type" : "Table", 
+        "Picture" : "Images/generic.jpg"
+    },    
     "shade0001": {
-        "Name" : "Shade 1",
+        "Name" : "Imperial Collection Creme Deep Drum Shade 12x14x16 (Spider)",
+        "Price" : 59.99,
+        "Description" : "Premium polyester fabric and a tall profile give this drum lamp shade a graceful profile made with fine quality hardware.",
+		"Type" : "Shade",
+        "Picture" : "Images/shade1.jpg"
+    },
+    "shade0002": {
+        "Name" : "Brentwood Mushroom Pleated Shade 9x16x14.25 (Spider)",
+        "Price" : 29.99,
+        "Description" : "A traditional and tasteful mushroom pleated lamp shade from the Brentwood lamp shade Collection.",
+		"Type" : "Shade",
+        "Picture" : "Images/shade2.jpg"
+    },
+    "shade0003": {
+        "Name" : "Oatmeal Tall Linen Drum Shade 14x14x15 (Spider)",
+        "Price" : 59.99,
+        "Description" : "Add height to an existing lamp base with this tall drum shade in an oatmeal linen blend fabric and chrome finish spider fitter.",
+		"Type" : "Shade",
+        "Picture" : "Images/shade3.jpg"
+    },
+    "shade0004": {
+        "Name" : "Shade 4",
         "Price" : 19.99,
-        "Description" : "This is a lamp shade!",
-        "Picture" : "Images/lamp1.jpg"
+        "Description" : "This is a generic shade #4.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
+    },
+    "shade0005": {
+        "Name" : "Shade 5",
+        "Price" : 19.99,
+        "Description" : "This is a generic shade #5.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
+    },
+    "shade0006": {
+        "Name" : "Shade 6",
+        "Price" : 19.99,
+        "Description" : "This is a generic shade #6.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
+    },
+    "shade0007": {
+        "Name" : "Shade 7",
+        "Price" : 19.99,
+        "Description" : "This is a generic shade #7.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
+    },
+    "shade0008": {
+        "Name" : "Shade 8",
+        "Price" : 19.99,
+        "Description" : "This is a generic shade #8.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
+    },
+    "shade0009": {
+        "Name" : "Shade 4",
+        "Price" : 19.99,
+        "Description" : "This is a generic shade #9.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
+    },
+    "shade0010": {
+        "Name" : "Shade 10",
+        "Price" : 19.99,
+        "Description" : "This is a generic shade #10.",
+		"Type" : "Shade",
+        "Picture" : "Images/generic.jpg"
     },
     "floor0001": {
-        "Name" : "Lamp 2",
+        "Name" : "Kathy Ireland Sonnett 3-Light Torchiere Floor Lamp",
+        "Price" : 249.99,
+        "Description" : "Make a decor statement with this exclusive Kathy Ireland torchiere floor lamp.",
+		"Type" : "Floor",
+        "Picture" : "Images/floor1.jpg"
+    },
+    "floor0002": {
+        "Name" : "Light Tree Four Light Bronze Torchiere Floor Lamp",
+        "Price" : 299.99,
+        "Description" : "Brighten your decor with this beautiful torchiere floor lamp design with four tiers of glass shades.",
+		"Type" : "Floor",
+        "Picture" : "Images/floor2.jpg"
+    },
+    "floor0003": {
+        "Name" : "Dawson Antique Brass 55 1/2in High Pharmacy Floor Lamp",
+        "Price" : 39.99,
+        "Description" : "A sleek and sophisticated floor lamp with refined details and a timeless antique brass finish.",
+		"Type" : "Floor",
+        "Picture" : "Images/floor3.jpg"
+    },
+    "floor0004": {
+        "Name" : "Floor 4",
         "Price" : 59.99,
-        "Description" : "This lamp can sit on the floor!",
-        "Picture" : "Images/lamp1.jpg"
+        "Description" : "This is a generic floor lamp #4.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
+    },
+    "floor0005": {
+        "Name" : "Floor 5",
+        "Price" : 59.99,
+        "Description" : "This is a generic floor lamp #5.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
+    },
+    "floor0006": {
+        "Name" : "Floor 6",
+        "Price" : 59.99,
+        "Description" : "This is a generic floor lamp #6.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
+    },
+    "floor0007": {
+        "Name" : "Floor 7",
+        "Price" : 59.99,
+        "Description" : "This is a generic floor lamp #7.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
+    },
+    "floor0008": {
+        "Name" : "Floor 8",
+        "Price" : 59.99,
+        "Description" : "This is a generic floor lamp #8.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
+    },
+    "floor0009": {
+        "Name" : "Floor 9",
+        "Price" : 59.99,
+        "Description" : "This is a generic floor lamp #9.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
+    },
+    "floor0010": {
+        "Name" : "Floor 10",
+        "Price" : 59.99,
+        "Description" : "This is a generic floor lamp #10.",
+		"Type" : "Floor",
+        "Picture" : "Images/generic.jpg"
     },
     "desk0001" : {
-        "Name" : "Lamp 3",
+        "Name" : "Skyy LED Chrome and Glass Desk Lamp",
+        "Price" : 179.99,
+        "Description" : "This sleek, modern metal and glass LED desk lamp features chrome and silver aluminum finishes and is perfect for industrial and contemporary spaces.",
+		"Type" : "Desk",
+        "Picture" : "Images/desk1.jpg"
+    },
+    "desk0002" : {
+        "Name" : "Colby Brushed Nickel Desk Lamp with Outlet and USB Port",
+        "Price" : 99.99,
+        "Description" : "Sporting a crisp and clean silhouette, this brushed nickel contemporary desk lamp will feel at home in any modern room.",
+		"Type" : "Desk",
+        "Picture" : "Images/desk2.jpg"
+    },
+    "desk0003" : {
+        "Name" : "Halogen Double Swing Arm Desk Lamp",
+        "Price" : 149.99,
+        "Description" : "A graceful form and adjustable lamp arms makes this twin light desk lamp perfect for work areas or study desks.",
+		"Type" : "Desk",
+        "Picture" : "Images/desk3.jpg"
+    },
+    "desk0004" : {
+        "Name" : "Desk 4",
         "Price" : 29.99,
-        "Description" : "This lamp can sit on a desk!",
-        "Picture" : "Images/lamp1.jpg"
+        "Description" : "This is a generic desk lamp #4.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
+    },
+    "desk0005" : {
+        "Name" : "Desk 5",
+        "Price" : 29.99,
+        "Description" : "This is a generic desk lamp #4.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
+    },
+    "desk0006" : {
+        "Name" : "Desk 6",
+        "Price" : 29.99,
+        "Description" : "This is a generic desk lamp #6.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
+    },
+    "desk0007" : {
+        "Name" : "Desk 7",
+        "Price" : 29.99,
+        "Description" : "This is a generic desk lamp #7.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
+    },
+    "desk0008" : {
+        "Name" : "Desk 8",
+        "Price" : 29.99,
+        "Description" : "This is a generic desk lamp #8.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
+    },
+    "desk0009" : {
+        "Name" : "Desk 9",
+        "Price" : 29.99,
+        "Description" : "This is a generic desk lamp #9.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
+    },
+    "desk0010" : {
+        "Name" : "Desk 10",
+        "Price" : 29.99,
+        "Description" : "This is a generic desk lamp #10.",
+		"Type" : "Desk",
+        "Picture" : "Images/generic.jpg"
     },
     "clip0001" : {
-        "Name" : "Clip Light 1",
+        "Name" : "LED Adjustable Gooseneck Energy Efficient Black Clip Light",
+        "Price" : 29.99,
+        "Description" : "Perfect for reading or for use around computers, this adjustable clip light puts light just where you need it, and uses energy efficient LEDs.",
+		"Type" : "Clip",
+        "Picture" : "Images/clip1.jpg"
+    },
+    "clip0002" : {
+        "Name" : "Cord-n-Plug White Accent Uplight with Foot Switch",
+        "Price" : 14.99,
+        "Description" : "An accent light to highlight plants, artwork or your favorite objects.",
+		"Type" : "Clip",
+        "Picture" : "Images/clip2.jpg"
+    },
+    "clip0003" : {
+        "Name" : "Black Finish 8in High Accent Uplight",
+        "Price" : 14.99,
+        "Description" : "An accent light in a can for lighting small objects.",
+		"Type" : "Clip",
+        "Picture" : "Images/clip3.jpg"
+    },
+    "clip0004" : {
+        "Name" : "Clip Light 4",
         "Price" : 9.99,
-        "Description" : "This light clips on things!",
-        "Picture" : "Images/lamp1.jpg"
+        "Description" : "This is a generic clip lamp #4.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
+    },
+    "clip0005" : {
+        "Name" : "Clip Light 5",
+        "Price" : 9.99,
+        "Description" : "This is a generic clip lamp #5.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
+    },
+    "clip0006" : {
+        "Name" : "Clip Light 6",
+        "Price" : 9.99,
+        "Description" : "This is a generic clip lamp #6.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
+    },
+    "clip0007" : {
+        "Name" : "Clip Light 7",
+        "Price" : 9.99,
+        "Description" : "This is a generic clip lamp #7.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
+    },
+    "clip0008" : {
+        "Name" : "Clip Light 8",
+        "Price" : 9.99,
+        "Description" : "This is a generic clip lamp #8.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
+    },
+    "clip0009" : {
+        "Name" : "Clip Light 9",
+        "Price" : 9.99,
+        "Description" : "This is a generic clip lamp #9.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
+    },
+    "clip0010" : {
+        "Name" : "Clip Light 10",
+        "Price" : 9.99,
+        "Description" : "This is a generic clip lamp #10.",
+		"Type" : "Clip",
+        "Picture" : "Images/generic.jpg"
     }
 }

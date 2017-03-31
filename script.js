@@ -281,3 +281,9 @@ function openCart() {
     //Show Cart
     showCart.style.display = "block";
 }
+function featuredPopulate(){
+	
+}
+function pagesPopulate(){
+	
+}
