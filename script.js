@@ -3,18 +3,18 @@ var cart = {};
 initializeCart();
 // JavaScript Document
 function Lamp(name, price, type, image, description){
-	this.name = name;
-	this.price = price;
-	this.type = type;
-	this.image = image;
-	this.description = description;
+    this.name = name;
+    this.price = price;
+    this.type = type;
+    this.image = image;
+    this.description = description;
 }
-function populate(where, what){
-	/*item.getElementById("lamp_name").innerHTML = this.name;
-	item.getElementById("lamp_price").innerHTML = this.price;
-	item.getElementById("lamp_image").innerHTML = this.image;
-	item.getElementById("lamp_type").innerHTML = this.type;
-	item.getElementById("lamp_description").innerHTML = this.description;*/
+Lamp.prototype.populate = function(item){
+    /*item.getElementById("lamp_name").innerHTML = this.name;
+    item.getElementById("lamp_price").innerHTML = this.price;
+    item.getElementById("lamp_image").innerHTML = this.image;
+    item.getElementById("lamp_type").innerHTML = this.type;
+    item.getElementById("lamp_description").innerHTML = this.description;*/
 }
 //JSON Lamp Catalog
 var catalog;
@@ -29,7 +29,18 @@ var boxSize;
 var largeBoxSize;
 var windowX = document.getElementById("wrap").getBoundingClientRect().width;
 var windowY = document.getElementById("wrap").getBoundingClientRect().height;
+<<<<<<< HEAD
 
+=======
+var index = 0;
+for(var lamp in catalog){
+    itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
+    console("Item: " + lamp, "itemList: " + itemList[index])
+    index += 1;
+}
+featuredPopulate();
+pagesPopulate();
+>>>>>>> origin/master
 for (var i = 0; i < holder.length; i++) {
 	galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
@@ -45,6 +56,16 @@ window.addEventListener("resize", function () {
 });
 if (windowX < 481) {
     window.addEventListener("scroll", removeTop);
+}
+var index = 0;
+for(var lamp in catalog){
+    itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
+    index += 1;
+}
+featuredPopulate();
+pagesPopulate();
+for (var i = 0; i < holder.length; i++) {
+    galleryItems[i] = holder[i].getElementsByClassName("gallery_item");
 }
 var galItemPosX = 0;
 var galItemPosY = 0;
@@ -349,14 +370,15 @@ function openCart() {
     showCart.style.display = "block";
 }
 function featuredPopulate(){
-	for(var i = 0; i < 4; i++){
-		createGalleryItem(holder[0], (10 * (i - 1)));
-		createGalleryItem(holder[1], ((10 * i) - 9));
-		createGalleryItem(holder[0], ((10 * i) - 8));
-		createGalleryItem(holder[1], ((10 * i) - 7));
-	}
+    for(var i = 0; i < 4; i++){
+        createGalleryItem(holder[0], (10 * (i - 1)));
+        createGalleryItem(holder[1], ((10 * i) - 9));
+        createGalleryItem(holder[0], ((10 * i) - 8));
+        createGalleryItem(holder[1], ((10 * i) - 7));
+    }
 }
 function pagesPopulate(){
+<<<<<<< HEAD
 	for(var j = 0; j < 50; j++){
 		console.log(itemList[j].type);
 		if(itemList[j].type == "Table")
@@ -370,12 +392,19 @@ function pagesPopulate(){
 		if(itemList[j].type == "Clip")
 			createGalleryItem(holder[6], j);
 	}
+=======
+    for(var i = 2; i < 7; i++){
+        for(var j = 0; j < 50; j++){
+            createGalleryItem(holder[i], j);
+        }
+    }
+>>>>>>> origin/master
 }
 function createGalleryItem(where, n){
-	var div = document.createElement("div");
-	div.className = "gallery_item";
-	populate(div, itemList[n]);
-	where.appendChild(div);
+    var div = document.createElement("div");
+    div.className = "gallery_item";
+    itemList[n].populate(div);
+    where.appendChild(div);
 }
 function dismantleCart() {
     var dismantleCart = document.getElementById("content_cart");
