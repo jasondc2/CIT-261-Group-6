@@ -200,9 +200,9 @@ function initializeCatalog() {
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             catalog = JSON.parse(xmlhttp.responseText);
         }
-    }
+    };
 
-    xmlhttp.open("GET", "catalog.json", true);
+    xmlhttp.open("GET", "catalog.json", false);
     xmlhttp.send();
 }
 
