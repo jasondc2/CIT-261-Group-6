@@ -1,0 +1,32 @@
+{
+    "table0001": {
+        "Name" : "Mario ? Block Lamp",
+        "Price" : 29.99,
+        "Description" : "This lamp is fancy. It looks like a ? block from Mario games. It lights up and plays music too! You should get 2. Just sayin'.",
+        "Picture" : "images/lamp1.jpg"
+    },
+    "shade0001": {
+        "Name" : "Shade 1",
+        "Price" : 19.99,
+        "Description" : "This is a lamp shade!",
+        "Picture" : "images/lamp1.jpg"
+    },
+    "floor0001": {
+        "Name" : "Lamp 2",
+        "Price" : 59.99,
+        "Description" : "This lamp can sit on the floor!",
+        "Picture" : "images/lamp1.jpg"
+    },
+    "desk0001" : {
+        "Name" : "Lamp 3",
+        "Price" : 29.99,
+        "Description" : "This lamp can sit on a desk!",
+        "Picture" : "images/lamp1.jpg"
+    },
+    "clip0001" : {
+        "Name" : "Clip Light 1",
+        "Price" : 9.99,
+        "Description" : "This light clips on things!",
+        "Picture" : "images/lamp1.jpg"
+    }
+}
