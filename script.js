@@ -3,18 +3,18 @@ var cart = {};
 initializeCart();
 // JavaScript Document
 function Lamp(name, price, type, image, description){
-	this.name = name;
-	this.price = price;
-	this.type = type;
-	this.image = image;
-	this.description = description;
+    this.name = name;
+    this.price = price;
+    this.type = type;
+    this.image = image;
+    this.description = description;
 }
 Lamp.prototype.populate = function(item){
-	/*item.getElementById("lamp_name").innerHTML = this.name;
-	item.getElementById("lamp_price").innerHTML = this.price;
-	item.getElementById("lamp_image").innerHTML = this.image;
-	item.getElementById("lamp_type").innerHTML = this.type;
-	item.getElementById("lamp_description").innerHTML = this.description;*/
+    /*item.getElementById("lamp_name").innerHTML = this.name;
+    item.getElementById("lamp_price").innerHTML = this.price;
+    item.getElementById("lamp_image").innerHTML = this.image;
+    item.getElementById("lamp_type").innerHTML = this.type;
+    item.getElementById("lamp_description").innerHTML = this.description;*/
 }
 //JSON Lamp Catalog
 var catalog;
@@ -44,8 +44,8 @@ if (windowX < 481) {
 }
 var index = 0;
 for(var lamp in catalog){
-	itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
-	index += 1;
+    itemList[index] = new Lamp(catalog[lamp].Name, catalog[lamp].Price, catalog[lamp].Type, catalog[lamp].Picture, catalog[lamp].Description);
+    index += 1;
 }
 featuredPopulate();
 pagesPopulate();
@@ -342,29 +342,25 @@ function openCart() {
     showCart.style.display = "block";
 }
 function featuredPopulate(){
-<<<<<<< HEAD
-
-=======
-	for(var i = 0; i < 4; i++){
-		createGalleryItem(holder[0], (10 * (i - 1)));
-		createGalleryItem(holder[1], ((10 * i) - 9));
-		createGalleryItem(holder[0], ((10 * i) - 8));
-		createGalleryItem(holder[1], ((10 * i) - 7));
-	}
->>>>>>> origin/master
+    for(var i = 0; i < 4; i++){
+        createGalleryItem(holder[0], (10 * (i - 1)));
+        createGalleryItem(holder[1], ((10 * i) - 9));
+        createGalleryItem(holder[0], ((10 * i) - 8));
+        createGalleryItem(holder[1], ((10 * i) - 7));
+    }
 }
 function pagesPopulate(){
-	for(var i = 2; i < 7; i++){
-		for(var j = 0; j < 50; j++){
-			createGalleryItem(holder[i], j);
-		}
-	}
+    for(var i = 2; i < 7; i++){
+        for(var j = 0; j < 50; j++){
+            createGalleryItem(holder[i], j);
+        }
+    }
 }
 function createGalleryItem(where, n){
-	var div = document.createElement("div");
-	div.className = "gallery_item";
-	itemList[n].populate(div);
-	where.appendChild(div);
+    var div = document.createElement("div");
+    div.className = "gallery_item";
+    itemList[n].populate(div);
+    where.appendChild(div);
 }
 function dismantleCart() {
     var dismantleCart = document.getElementById("content_cart");
