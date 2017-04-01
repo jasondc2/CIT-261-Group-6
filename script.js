@@ -31,7 +31,7 @@ function populate(where, n){
     var line3 = document.createElement("li");
 	line.innerHTML = n.name;
 	line.innerHTML = n.price;
-	line.innerHTML = description;
+	line.innerHTML = n.description;
 
 	where.appendChild(line);
 	where.appendChild(line2);
