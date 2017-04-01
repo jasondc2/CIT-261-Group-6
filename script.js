@@ -29,7 +29,7 @@ function populate(where, n){
     var line = document.createElement("li");
     var line2 = document.createElement("li");
     var btn = document.createElement("button");
-	line1.innerHTML = n.name;
+	line.innerHTML = n.name;
 	line2.innerHTML = n.price;
 
 	where.appendChild(line);
