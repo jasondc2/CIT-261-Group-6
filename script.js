@@ -28,22 +28,15 @@ function populate(where, n){
 	//item = document.createElement("ol");
     var line = document.createElement("li");
     var line2 = document.createElement("li");
-    var backgd = document.createElement("img")
     var line3 = document.createElement("li");
 	line.innerHTML = n.name;
 	line.innerHTML = n.price;
-	img.innerHTML = n.image;
 	line.innerHTML = description;
-    //item.appendChild(line);
+
 	where.appendChild(line);
 	where.appendChild(line2);
-	where.appendChild(img);
 	where.appendChild(line3);
-    /*item.getElementById("lamp_name").innerHTML = this.name;
-    item.getElementById("lamp_price").innerHTML = this.price;
-    item.getElementById("lamp_image").innerHTML = this.image;
-    item.getElementById("lamp_type").innerHTML = this.type;
-    item.getElementById("lamp_description").innerHTML = this.description;*/
+	where.style.backgroundImage = "url('" + n.image + "')";
 }
 //JSON Lamp Catalog
 var catalog;
