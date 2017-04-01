@@ -24,15 +24,15 @@ function Lamp(id, name, price, type, image, description){
     this.image = image;
     this.description = description;
 }
-function populate(where, item){
+function populate(where, n){
 	//item = document.createElement("ol");
     var line = document.createElement("li");
     var line2 = document.createElement("li");
+
+	line.innerHTML = itemList[n].id;
     //item.appendChild(line);
 	where.appendChild(line);
 	where.appendChild(line2);
-
-	line.innerHTML = item.id;
     /*item.getElementById("lamp_name").innerHTML = this.name;
     item.getElementById("lamp_price").innerHTML = this.price;
     item.getElementById("lamp_image").innerHTML = this.image;
@@ -399,7 +399,7 @@ function pagesPopulate(){
 function createGalleryItem(where, n){
     var div = document.createElement("div");
     div.className = "gallery_item";
-    populate(div, itemList[n]);
+    populate(div, n);
     where.appendChild(div);
 }
 function dismantleCart() {
