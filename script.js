@@ -373,7 +373,7 @@ function openCart() {
     showCart.style.display = "block";
 }
 function featuredPopulate(){
-    for(var i = 1; i < 5; i++){
+    for(var i = 1; i < 6; i++){
         createGalleryItem(holder[0], (10 * (i - 1)));
         createGalleryItem(holder[1], ((10 * i) - 9));
         createGalleryItem(holder[0], ((10 * i) - 8));
