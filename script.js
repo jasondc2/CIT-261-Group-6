@@ -32,7 +32,7 @@ function populate(where, item){
 	where.appendChild(line);
 	where.appendChild(line2);
 
-	line.innerHTML = "hello";
+	line.innerHTML = item.id;
     /*item.getElementById("lamp_name").innerHTML = this.name;
     item.getElementById("lamp_price").innerHTML = this.price;
     item.getElementById("lamp_image").innerHTML = this.image;
