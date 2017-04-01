@@ -149,16 +149,16 @@ body{
     font-size: 12px;
 }
 #footContentLeft{
-    text-align: left;
     display: inline;
+    float: left;
 }
 #footContentMiddle{
-    text-align: center;
     display: inline;
+    float: center;
 }
 #footContentRight{
-    text-align: right;
     display: inline;
+    float: right;
 }
 /*Class Styles*/
 .title{
