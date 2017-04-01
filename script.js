@@ -28,8 +28,7 @@ function populate(where, n){
 	//item = document.createElement("ol");
     var line = document.createElement("li");
     var line2 = document.createElement("li");
-
-	line.innerHTML = itemList[n].id;
+	line.innerHTML = n.id;
     //item.appendChild(line);
 	where.appendChild(line);
 	where.appendChild(line2);
@@ -374,7 +373,7 @@ function openCart() {
     showCart.style.display = "block";
 }
 function featuredPopulate(){
-    for(var i = 0; i < 4; i++){
+    for(var i = 1; i < 5; i++){
         createGalleryItem(holder[0], (10 * (i - 1)));
         createGalleryItem(holder[1], ((10 * i) - 9));
         createGalleryItem(holder[0], ((10 * i) - 8));
@@ -396,10 +395,10 @@ function pagesPopulate(){
 			createGalleryItem(holder[6], j);
 	}
 }
-function createGalleryItem(where, n){
+function createGalleryItem(where, p){
     var div = document.createElement("div");
     div.className = "gallery_item";
-    populate(div, n);
+    populate(div, itemList[p]);
     where.appendChild(div);
 }
 function dismantleCart() {
