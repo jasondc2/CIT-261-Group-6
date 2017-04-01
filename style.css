@@ -147,6 +147,7 @@ body{
     background-color: #D3D3D3;
     font-style: italic;
     font-size: 12px;
+    text-align: center;
 }
 #footContentLeft{
     display: inline;
@@ -154,7 +155,6 @@ body{
 }
 #footContentMiddle{
     display: inline;
-    float: center;
 }
 #footContentRight{
     display: inline;
