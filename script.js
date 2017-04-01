@@ -32,7 +32,7 @@ function populate(where, n){
 	line.innerHTML = n.name;
 	line2.innerHTML = n.price;
 	btn.innerHTML = "add";
-	btn.setAttribute("onclick", "addToCart(" + n.id + ")");
+	btn.setAttribute("onclick", "addToCart('" + n.id + "')");
 
 	where.appendChild(line);
 	where.appendChild(line2);
