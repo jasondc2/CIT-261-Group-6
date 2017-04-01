@@ -28,14 +28,13 @@ function populate(where, n){
 	//item = document.createElement("ol");
     var line = document.createElement("li");
     var line2 = document.createElement("li");
-    var line3 = document.createElement("li");
-	line.innerHTML = n.name;
-	line.innerHTML = n.price;
-	line.innerHTML = n.description;
+    var btn = document.createElement("button");
+	line1.innerHTML = n.name;
+	line2.innerHTML = n.price;
 
 	where.appendChild(line);
 	where.appendChild(line2);
-	where.appendChild(line3);
+	where.appendChild(btn);
 	where.style.backgroundImage = "url('" + n.image + "')";
 }
 //JSON Lamp Catalog
