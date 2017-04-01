@@ -25,10 +25,14 @@ function Lamp(id, name, price, type, image, description){
     this.description = description;
 }
 function populate(where, item){
-	item = document.createElement("ol");
+	//item = document.createElement("ol");
     var line = document.createElement("li");
-    item.appendChild(line);
-	where.appendChild(item);
+    var line2 = document.createElement("li");
+    //item.appendChild(line);
+	where.appendChild(line);
+	where.appendChild(line2);
+
+	line.innerHTML = item.name;
     /*item.getElementById("lamp_name").innerHTML = this.name;
     item.getElementById("lamp_price").innerHTML = this.price;
     item.getElementById("lamp_image").innerHTML = this.image;
