@@ -33,6 +33,8 @@ function populate(where, n){
 	line2.innerHTML = n.price;
 	btn.innerHTML = "add";
 	btn.setAttribute("onclick", "addToCart('" + n.id + "')");
+	where.setAttribute("onmouseover", "getBig(this)");
+	where.setAttribute("onmouseout", "getNorm(this)");
 
 	where.appendChild(line);
 	where.appendChild(line2);
